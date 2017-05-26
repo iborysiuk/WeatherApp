@@ -20,8 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            debuggable true
-            minifyEnabled true
             applicationIdSuffix '.debug'
             versionNameSuffix '.debug'
         }
@@ -38,6 +36,7 @@ android {
 
 dependencies {
     implementation rootProject.ext.appcompat
+    implementation rootProject.ext.recyclerview
     implementation rootProject.ext.constraint
     implementation rootProject.ext.kotlin
     implementation rootProject.ext.ankoCommon

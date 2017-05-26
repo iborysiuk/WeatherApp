@@ -25,6 +25,7 @@ ext {
 
     support_version = '25.3.1'
     appcompat = "com.android.support:appcompat-v7:$support_version"
+    recyclerview = "com.android.support:recyclerview-v7:$support_version"
     constraint = "com.android.support.constraint:constraint-layout:1.0.2"
 
     kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"

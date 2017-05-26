@@ -4,6 +4,7 @@
   package="io.yborysiuk.weather">
 
   <application
+    android:name=".WeatherApp"
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
@@ -11,7 +12,7 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-    <activity android:name="io.yborysiuk.weather.MainActivity">
+    <activity android:name="io.yborysiuk.weather.ui.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
