@@ -33,6 +33,8 @@ ext {
     anko_version = '0.10.0'
     ankoCommon = "org.jetbrains.anko:anko-commons:$anko_version"
 
+    gson = "com.google.code.gson:gson:2.8.0"
+
     espresso_version = '2.2.2'
     espressoCore = "com.android.support.test.espresso:espresso-core:$espresso_version"
     junit = "junit:junit:4.12"

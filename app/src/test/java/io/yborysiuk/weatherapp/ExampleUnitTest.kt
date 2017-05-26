@@ -1,4 +1,4 @@
-package io.yborysiuk.weather
+package io.yborysiuk.weatherapp
 
 import org.junit.Test
 
