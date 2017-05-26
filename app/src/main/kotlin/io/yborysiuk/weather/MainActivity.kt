@@ -1,4 +1,4 @@
-package io.yborysiuk.wheatherapp
+package io.yborysiuk.weather
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

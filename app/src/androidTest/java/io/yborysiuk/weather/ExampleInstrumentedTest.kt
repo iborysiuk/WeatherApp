@@ -1,4 +1,4 @@
-package io.yborysiuk.wheatherapp
+package io.yborysiuk.weather
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

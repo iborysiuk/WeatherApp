@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdk
-    buildToolsVersion rootProject.ext.tools
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
     defaultConfig {
-        applicationId "io.yborysiuk.wheatherapp"
-        minSdkVersion rootProject.ext.minSdk
-        targetSdkVersion rootProject.ext.targetSdk
+        applicationId "io.yborysiuk.weather"
+        minSdkVersion 21
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -19,6 +19,20 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            debuggable true
+            minifyEnabled true
+            applicationIdSuffix '.debug'
+            versionNameSuffix '.debug'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
     }
 }
 
@@ -27,10 +41,8 @@ dependencies {
     implementation rootProject.ext.constraint
     implementation rootProject.ext.kotlin
     implementation rootProject.ext.ankoCommon
-
     androidTestImplementation rootProject.ext.espressoCore, {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
     testImplementation rootProject.ext.junit
-
 }
