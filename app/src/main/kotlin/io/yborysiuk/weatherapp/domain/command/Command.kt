@@ -1,5 +1,5 @@
 package io.yborysiuk.weatherapp.domain.command
 
-interface Command<out T> {
+interface Command<T> {
     fun execute(): T
 }

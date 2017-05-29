@@ -31,6 +31,7 @@ android {
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
     }
 }
 
@@ -40,7 +41,9 @@ dependencies {
     implementation rootProject.ext.constraint
     implementation rootProject.ext.kotlin
     implementation rootProject.ext.ankoCommon
+    implementation rootProject.ext.ankoSqlite
     implementation rootProject.ext.gson
+    implementation rootProject.ext.picasso
     androidTestImplementation rootProject.ext.espressoCore, {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
